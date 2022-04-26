@@ -1,2 +1,84 @@
 .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.kumbh-sans-400 {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: auto;
+}
+
+.main-container {
+    height: 100vh;
+    background-color: white;
+    margin: 0 12.5%;
+}
+
+.header-container {
+    padding: 2% 11.5%;
+}
+
+.separator {
+    margin-top: 1.6%;
+    border-bottom: 1px solid lightgray;
+}
+
+.no-bullets {
+    list-style: none;
+}
+
+.list-container {
+    margin-right: 45%;
+}
+
+.headerList {
+    height: 5rem;
+    padding: 6%;
+}
+
+.image-avatar {
+    margin-left: 10%;
+    width: 45%;
+}
+
+.icon-cart {
+    margin-right: 10%;
+    width: 20%;
+}
+
+.nav-icons {
+    width: 11%;
+}
