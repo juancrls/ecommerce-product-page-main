@@ -16,33 +16,14 @@
 </head>
 <body>
   
-  <div class="side-menu flex justify-center absolute">
-    <nav>
-      <ul class="flex flex-column">
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>  
-      </ul>
-    </nav>
-  </div>
-  
   <div class="main-container">
     <header class="flex justify-between align-center">
       
       <div class="flex align-center">
-        <div class="hamburger-menu">
-          
-          <input type="checkbox" id="hamburger-menu-checkbox">
-          <label class="hamburger-menu-label" for="hamburger-menu-checkbox">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </label>
-
-
-        </div>
+        <button class="hamburger-menu ">
+          <div class="bar"></div>
+        </button>
+        
         <img class="logo" src="./images/logo.svg" alt="sneakers logo">
       </div>
   
@@ -55,6 +36,16 @@
         <img class="user-avatar" src="./images/image-avatar.png" alt="user avatar">
       </div>
     </header>
+    
+    <nav class="mobile-side-menu flex justify-center absolute">
+      <ul class="flex flex-column">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>  
+      </ul>
+    </nav>
   
     <div class="image-container relative">
       
