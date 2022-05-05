@@ -23,6 +23,10 @@ body {
     display: flex;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .align-center {
     align-items: center;
 }
@@ -59,20 +63,83 @@ header {
     padding-right: 14rem; */
 }
 
-.hamburguer-menu {
+.hamburger-menu {
     padding-bottom: 0.4rem;
     padding-top: 0.4rem;
     padding-right: 0.4rem;
     padding-left: 0.3rem;
 }
 
-.line {
+#hamburger-menu-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.hamburger-menu-label {
+    cursor: pointer;
+    position: relative;
+
+    width: 1.6rem;
+    height: 0.3rem;
+}
+
+.line1, .line2, .line3 {
     margin: 0.3rem;
     width: 1.6rem;
     height: 0.3rem;
     background-color: black;
     border-radius: 5.0rem;
+    transition: 0.25s ease-in-out;
+
+    position: relative;
 }
+
+#hamburger-menu-checkbox:checked + label .line1 {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#hamburger-menu-checkbox:checked + label .line2 {
+    opacity: 0;
+}
+
+#hamburger-menu-checkbox:checked + label .line3 {
+    top: -4px;
+    transform: rotate(45deg);
+}
+
+.side-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 25.5rem;
+    height: 100%;
+    z-index: 1;
+    border-right: 1px solid black;
+
+    transition: 0.5s ease-in-out;
+}
+
+.side-menu ul {
+    margin-top: 10.0rem;
+    margin-right: 8.0rem;
+    gap: 2rem;
+}
+
+.side-menu a {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 
 .logo {
     padding-left: 1.0rem;
@@ -94,6 +161,18 @@ header {
     /* border = inside | outline = outside */
     outline: 2px solid orange; 
     border-radius: 5.0rem;
+}
+
+.item-quantity {
+    display: none;
+
+    width: 2.0rem;
+    height: 1.2rem;
+    border-radius: 1.0rem;
+    right: 6.5rem;
+    top: 1.7rem;
+    background-color: orange;
+    color: white;
 }
 
 .shopping-lightbox {
