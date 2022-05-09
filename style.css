@@ -165,7 +165,7 @@ ul {
     border-radius: 5.0rem;
 }
 
-.item-quantity {
+.shopping-cart .item-quantity {
     display: none;
 
     width: 2.0rem;
@@ -250,6 +250,17 @@ ul {
     width: 100%;
     height: 100%;
     padding: 7.2% 7% 8.1% 6.2%;
+}
+
+.cart-empty {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-content {
+    display: none;
+    width: inherit;
+    height: inherit;
 }
 
 .item {

@@ -58,33 +58,46 @@
           <div class="lightbox-separator absolute"></div>
   
           <div class="lightbox-content flex justify-center align-center">
-            <!-- <span class="lightbox-main-span">Your cart is empty.</span> -->
             <div class="cart-items">
+              
+              <div class="cart-empty flex align-center justify-center">
+                <span class="lightbox-main-span">Your cart is empty.</span>
+              </div>
 
-              <div class="item flex justify-between">
-                <img class="item-image" src="./images/image-product-1-thumbnail.jpg">
-                
-                <div class="item-info">
-                  <span class="item-name">Autumn Limited Edition sneakers</span>
-                  <span class="item-price">$125.00 x 3 <span id="total-price">$375.00</span> </span>
+              <div class="cart-content">
+                <div class="item flex justify-between">
+                  <img class="item-image" src="./images/image-product-1-thumbnail.jpg">
+                  
+                  <div class="item-info">
+                    <span class="item-name">Autumn Limited Edition sneakers</span>
+                    <span class="item-price">
+                      $125.00 x <span class="item-quantity">0</span>
+                      <span id="total-price">
+                        $375.00
+                      </span>
+                    </span>
+                  </div>
+  
+                  <div class="delete-item-container">
+                    <img class="delete-item-icon" src="./images/icon-delete.svg" alt="delete item">
+                  </div>
                 </div>
-
-                <div class="delete-item-container">
-                  <img class="delete-item-icon" src="./images/icon-delete.svg" alt="delete item">
+                
+                <div class="flex justify-center align-end checkout-button-container">
+                  <button class="checkout-button">Checkout</button>
                 </div>
               </div>
               
-              <div class="flex justify-center align-end checkout-button-container">
-                <button class="checkout-button">Checkout</button>
-              </div>
-  
+              
             </div>
           </div>
-  
+          
         </div>
       </div>
       
       <img class="product-image" src="./images/image-product-1.jpg" alt="product image">
+      <button class="add-item">add</button>
+      <button class="remove-item">remove</button>
   
   
       <div class="previous-item-button absolute">
