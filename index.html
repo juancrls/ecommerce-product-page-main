@@ -36,7 +36,7 @@
         <img class="user-avatar" src="./images/image-avatar.png" alt="user avatar">
       </div>
     </header>
-    
+
     <nav class="mobile-side-menu flex justify-center absolute">
       <ul class="flex flex-column">
         <li><a href="#">Collections</a></li>
@@ -58,13 +58,33 @@
           <div class="lightbox-separator absolute"></div>
   
           <div class="lightbox-content flex justify-center align-center">
-            <span class="lightbox-main-span">Your cart is empty.</span>
+            <!-- <span class="lightbox-main-span">Your cart is empty.</span> -->
+            <div class="cart-items">
+
+              <div class="item flex justify-between">
+                <img class="item-image" src="./images/image-product-1-thumbnail.jpg">
+                
+                <div class="item-info">
+                  <span class="item-name">Autumn Limited Edition sneakers</span>
+                  <span class="item-price">$125.00 x 3 <span id="total-price">$375.00</span> </span>
+                </div>
+
+                <div class="delete-item-container">
+                  <img class="delete-item-icon" src="./images/icon-delete.svg" alt="delete item">
+                </div>
+              </div>
+              
+              <div class="flex justify-center align-end checkout-button-container">
+                <button class="checkout-button">Checkout</button>
+              </div>
+  
+            </div>
           </div>
   
         </div>
       </div>
       
-      <img src="./images/image-product-1.jpg" alt="product image">
+      <img class="product-image" src="./images/image-product-1.jpg" alt="product image">
   
   
       <div class="previous-item-button absolute">
@@ -78,7 +98,8 @@
 
   </div>
 
-  <script src="./app.js"></script>
+  <script src="./hamburger-menu.js"></script>
+  <script src="./cart.js"></script>
     
 
     

@@ -31,6 +31,10 @@ body {
     align-items: center;
 }
 
+.align-end {
+    align-items: flex-end
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -103,7 +107,6 @@ header {
     
 }
 .mobile-side-menu {
-    /* display: none; */
     position: fixed;
     background-color: white;
     top: 0;
@@ -184,7 +187,7 @@ ul {
     height: 30.0rem;
 }
 
-.image-container img {
+.product-image {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -197,8 +200,11 @@ ul {
 .lightbox-container {
     display: none;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
+}
+
+.lightbox-container.active {
+    display: flex;
 }
 
 .lightbox-status {
@@ -238,4 +244,100 @@ ul {
     font-size: 1.6rem;
     font-weight: 700;
     padding-bottom: 1.4rem;
+}
+
+.cart-items {
+    width: 100%;
+    height: 100%;
+    padding: 7.2% 7% 8.1% 6.2%;
+}
+
+.item {
+    width: 100%;
+    height: 50%;
+}
+
+.item-image {
+    width: 16%;
+    height: 78%;
+    border-radius: 5px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 11%;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    width: 61%;
+    /* margin: 0 5.3%; */
+}
+
+.item-name {
+    /* width: 180px; */
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.item-price {
+
+}
+
+#total-price {
+    padding-left: 2%;
+    font-weight: 700;
+}
+
+.delete-item-container {
+    position: relative;
+    width: 13%;
+}
+
+.delete-item-icon {
+    position: absolute;
+    right: 0;
+    top: 25%;
+
+    width: 40%;
+    height: 26%;
+}
+
+.delete-item-icon:hover {
+    width: 42%;
+    height: 28%;
+}
+
+.delete-item-icon:active {
+    width: 40%;
+    height: 25%;
+}
+
+.checkout-button-container {
+    width: 100%;
+    height: 50%;
+}
+
+.checkout-button {
+    width: 100%;
+    height: 85%;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+    transition: 0.2s;
+}
+
+.checkout-button:hover {
+    font-size: 1.7rem;
+}
+
+.checkout-button:active {
+    background-color: orange;
 }
