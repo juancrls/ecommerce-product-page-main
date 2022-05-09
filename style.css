@@ -293,10 +293,6 @@ ul {
     text-overflow: ellipsis;
 }
 
-.item-price {
-
-}
-
 #total-price {
     padding-left: 2%;
     font-weight: 700;
@@ -351,4 +347,93 @@ ul {
 
 .checkout-button:active {
     background-color: orange;
+}
+
+
+.main-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 6.5%;
+    gap: 0.9rem;
+}
+
+.sneaker-company {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.17rem;
+    color: hsl(26, 100%, 55%);
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.product-description {
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0.011rem;
+    line-height: 1.8;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+
+    padding-top: 3%;
+}
+
+.price-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.price-with-discount {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.discount-container {
+    display: inline;
+    margin-left: 8%;
+    padding: 3.4px 8.6px;
+    background-color: hsl(25, 100%, 94%);
+}
+
+.discount {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+}
+
+.normal-price-container {
+    display: flex;
+
+}
+.price-without-discount {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration:  line-through;
+}
+
+.product-quantity {
+
+}
+
+.add-item {
+
+}
+
+.item-quantity {
+
+}
+
+.remove-item {
+
+}
+
+.add-to-cart-container {
+
 }
