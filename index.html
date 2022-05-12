@@ -29,7 +29,7 @@
   
       <div class="header-icons flex align-center justify-between">
         <div class="shopping-cart">
-          <div class="item-quantity absolute flex align-center justify-center">3</div>
+          <div class="cart-item-quantity absolute flex align-center justify-center">0</div>
           <img src="./images/icon-cart.svg" alt="shopping cart icon">
         </div>
   
@@ -71,7 +71,7 @@
                   <div class="item-info">
                     <span class="item-name">Autumn Limited Edition sneakers</span>
                     <span class="item-price">
-                      $125.00 x <span class="item-quantity">0</span>
+                      $125.00 x <span class="cart-item-quantity">0</span>
                       <span id="total-price">
                         $375.00
                       </span>
@@ -95,7 +95,21 @@
         </div>
       </div>
       
+      <!-- <img class="previous-image" src=""> -->
       <img class="product-image" src="./images/image-product-1.jpg" alt="product image">
+      <!-- <img class="next-image" src="./images/image-product-2.jpg"> -->
+
+      <div class="image-gallery-buttons">
+
+        <div class="previous-button">
+          <img src="./images/icon-previous.svg" alt="next item">
+        </div>
+
+        <div class="next-button">
+          <img src="./images/icon-next.svg" alt="next item">
+        </div>
+
+      </div>
 
       <div class="main-info-container">
         <h3 class="sneaker-company">Sneaker company</h3>
@@ -127,33 +141,21 @@
             <button class="add-item">+</button>
           </div>
   
-          <button class="button-container">
+          <button class="add-to-cart-button-container">
             <img class="checkout-button-icon" src="./images/icon-cart.svg" alt="shopping cart icon">
             <span class="checkout-button-span">Add to cart</span>
           </button>
         </div>
-        
-<!-- 
-      <div class="previous-item-button absolute">
-        <img src="./images/icon-previous.svg" alt="next item">
-      </div>
-      
-      <div class="next-item-button absolute">
-        <img src="./images/icon-next.svg" alt="next item">
-      </div> -->
-
     </div>
 
   </div>
-
-  <script src="./hamburger-menu.js"></script>
-  <script src="./cart.js"></script>
-    
-
-    
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/juancrls">Juan Carlos</a>.
-  </div> -->
+  </div>
+
+  <script src="./js/hamburger-menu.js"></script>
+  <script type="module" src="./js/cart.js"></script>
+  <script src="./js/image-gallery.js"></script>
 </body>
 </html>
