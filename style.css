@@ -527,7 +527,12 @@ ul {
     }
 
     .main-header {
-        padding-top: 3.6%;
+        height: 11rem;
+        border-bottom: 1px solid hsl(219, 9%, 45%);
+    }
+
+    .header-content {
+        height: 100%;
     }
 
     .product-image {
@@ -559,17 +564,28 @@ ul {
     }
 
     .mobile-side-menu ul {
+        height: 100%;
         margin: 0;
+
         flex-direction: row;
     }
 
     .mobile-side-menu li {
+        height: 105%;
+        display: flex;
+        align-items: center;
         margin-right: 2.7%;
     }
 
+    .mobile-side-menu li:hover {
+        border-bottom: 3px solid hsl(26, 100%, 55%);
+    }
+
     .mobile-side-menu a {
+        padding: 4.5rem 0;
         color: hsl(219, 9%, 45%);
         font-size: 1.5rem;
         font-weight: 400;
+        cursor: pointer;
     }
 }
