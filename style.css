@@ -455,6 +455,7 @@ ul {
     display: flex;
 
 }
+
 .price-without-discount {
     font-size: 1.6rem;
     font-weight: 700;
@@ -547,6 +548,13 @@ ul {
         top: 0;
         right: -3.5%;
     }
+    
+    .product-image {
+        object-fit: contain;
+        width: 44%;
+        height: 100%;
+        border-radius: 1.5rem;
+    }
 
     .main-content-container {
         padding: 7.8% 6.8% 6.8% 6.8%;
@@ -556,12 +564,58 @@ ul {
         /* align-items: center; */
         /* flex-wrap: wrap; */
     }
+
+    .main-info-container {
+        padding-right: 0;
+        margin-left: 5.8%;
+        gap: 1.6rem;
+    }
     
-    .product-image {
-        object-fit: contain;
-        width: 44%;
-        height: 100%;
-        border-radius: 1.5rem;
+    .sneaker-company {
+        font-size: 1.3rem;
+    }
+    
+    .product-name {
+        font-size: 4.38rem;
+        line-height: 1.1;
+    }
+    
+    .product-description {
+        padding-top: 1.5rem;
+        letter-spacing: 0.065rem;
+        line-height: 1.8;
+    }
+    
+    .product-price {
+        flex-wrap: wrap;
+    }
+    
+    .price-container {
+        /* width: 100%;
+        display: flex;
+        align-items: center; */
+    }
+    
+    .price-with-discount {
+        /* font-size: 3rem;
+        font-weight: 700; */
+    }
+
+    .price-without-discount {
+        margin-top: 0.6rem;
+    }
+    
+    .discount-container {
+        /* display: inline;
+        margin-left: 16px;
+        padding: 3.4px 8.6px;
+        background-color: hsl(25, 100%, 94%); */
+    }
+    
+    .discount {
+        /* font-size: 1.6rem;
+        font-weight: 700;
+        color: hsl(26, 100%, 55%); */
     }
     
 
