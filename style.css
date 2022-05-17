@@ -541,8 +541,11 @@ ul {
     }
 
     .lightbox-container {
-        top: -10%;
-        left: 38.5%;
+        width: 36rem;
+        height: 25.5rem;
+
+        top: 0;
+        right: -3.5%;
     }
 
     .main-content-container {
